@@ -93,9 +93,48 @@
          .clear{
          clear:both;
          }
+	.mymenu {
+      margin:0 auto;
+      background-color: #ddd;
+      width:550px;
+      border-radius:0 0 5px 5px;
+      border: 1px solid #ddd;
+      font-weight:bold;
+      font-size:13px;
+      }
+      .mymenu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #ddd;
+      }
+      .mymenu li {
+      float: left;
+      }
+      .mymenu li a {
+      display: block;
+      color: #555;
+      text-align: center;
+      padding: 8px 10px;
+      text-decoration: none;
+      }
+      .mymenu li a:hover {
+      background-color: #bbb;
+      color: #111;
+      }
       </style>
    </head>
    <body>
+	        <div class="mymenu">
+        <ul>
+          <li><a target="_blank" href="https://buananetpbun.github.io">☰ TOOLS</a></li>
+          <li><a target="_blank" href="https://github.com/buananetpbun">GITHUB</a></li>
+          <li><a href="javascript:callmodal()">DONATE</a></li>
+          <li><a target="_blank" href="https://fb.me/buananet.pbun">CONTACT</a></li>
+          <img style="float:right; margin-right:10px" src="https://user-images.githubusercontent.com/42666125/150687713-5bb23ddf-11a2-476d-a6dc-81e97eec3a77.png" alt="Mikrotik RouterOS">
+        </ul>
+      </div> 		   
       <div id="page">
          <form id="searchForm" method="post">
             <h1>{ <span style="color:#4D90FE">router-os</span>.github.io }</h1>
