@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="https://buananetpbun.github.io/favicon.ico" type="image/x-icon">
     <title>MikroTik RouterOS Search Script - router-os.github.io</title>
+    <meta content='Free MikroTik RouterOS Search Script' name='description'/>
+    <meta content='tool, pcc, queue, vpn, setting mikrotik, mikrotik, router, winbox, termimal, rsc, script, hotspot, wirelessm rtrwnet' name='keywords'/>
+    <meta content='index, follow, noodp' name='robots'/>
     <style>
       *{
       margin:0;
@@ -24,7 +29,7 @@
       background:#ddd !important;
       margin-right: -6px !important;
       line-height:normal !important
-      } 
+      }
       .gsc-search-button-v2 {
       border-radius:5px !important;
       height:40px !important;
@@ -35,7 +40,7 @@
       clear: both 
       }
       body{
-      background: #292929 url(https://user-images.githubusercontent.com/42666125/148148489-3a9a4b88-3e16-4836-8202-183ba6bfae2c.png) no-repeat top right;
+      background: #f0f0f0;
       color:#999;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
       font-size: 0.9375rem;
@@ -49,9 +54,8 @@
       }
       h1{
       overflow:hidden;
-      height:90px;
       text-align:center;
-      font-size: 2.9375rem;
+      font-size: 2.0rem;
       font-weight: 400;
       }
       #searchForm{
@@ -72,30 +76,45 @@
       text-align:center;
       }
       p.credit a{
-      color:#4D90FE;
-      font-size:10px;
+      color:#FF9900;
+      font-size:11px;
       padding:4px 8px;
       }
       p.credit a:hover{
-      background-color:#38464f;
-      border-color:#38464f #788E9B #788E9B #38464f;
+      color:#999;
       }
       a, a:visited {
       text-decoration:none;
       outline:none;
-      border-bottom:1px dotted #97cae6;
       color:#97cae6;
       }
       a:hover{
-      border-bottom:1px dashed transparent;
       }
       .clear{
       clear:both;
       }
+      @media screen and (max-width: 500px){
+      #page{
+      width:95%;
+      }       
+      #searchForm{
+      /* The search form. */
+      padding:30px 10px 10px;
+      margin:40px 0;
+      width:95%;
+      }
+      h1{
+      overflow:hidden;
+      line-height: normal;
+      text-align:center;
+      font-size: 2.0rem;
+      font-weight: 400;
+      }     
+      }
       .mymenu {
       margin:0 auto;
       background-color: #ddd;
-      width:550px;
+      width:570px;
       border-radius:0 0 5px 5px;
       border: 1px solid #ddd;
       font-weight:bold;
@@ -121,13 +140,13 @@
       .mymenu li a:hover {
       background-color: #bbb;
       color: #111;
-      }
+      }   
     </style>
   </head>
   <body>
     <div class="mymenu">
       <ul>
-        <li><a target="_blank" href="https://buananetpbun.github.io">☰ TOOLS</a></li>
+        <li><a target="_blank" href="https://buananetpbun.github.io">☰ ALL TOOLS</a></li>
         <li><a target="_blank" href="https://github.com/buananetpbun">GITHUB</a></li>
         <li><a href="javascript:callmodal()">DONATE</a></li>
         <li><a target="_blank" href="https://fb.me/buananet.pbun">CONTACT</a></li>
@@ -136,9 +155,10 @@
     </div>
     <div id="page">
       <form id="searchForm" method="post">
-        <h1>{ <span style="color:#4D90FE">router-os</span>.github.io }</h1>
+        <h1>{ <span style="color:#FF9900">router-os</span>.github.io }</h1>
+        <p class="credit">MikroTik RouterOS Search Script</p>
         <fieldset>
-          <script async src="https://cse.google.com/cse.js?cx=f3f27f0dcb34b25f4"></script>
+          <script async src="https://cse.google.com/cse.js?cx=6879494ac5b3a8639"></script>
           <div style="clear:both;"></div>
           <div class="gcse-search"></div>
         </fieldset>
