@@ -39,25 +39,130 @@
       border:none !important; 
       clear: both 
       }
-      body{
-      background: #f0f0f0;
-      color:#999;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-      font-size: 0.9375rem;
-      font-weight: 400;
+
+      *{-webkit-transition:all .3s ease-in;-moz-transition:all .3s ease-in;-ms-transition:all .3s ease-in;transition:all .3s ease-in}
+      body{font-size:16px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";margin:0}
+      html,body{color:#292929;height:100%;width:100%;margin:0px;padding:0;background:#292929 url(https://user-images.githubusercontent.com/42666125/147363663-30767ef4-09af-48d6-8ea1-ee7a1c09e90f.png) no-repeat}
+      *{box-sizing:border-box}
+      h1{font-size:48px;font-size:3rem;font-weight:700;letter-spacing:-1.6px;letter-spacing:-.1rem;line-height:1;text-align:center}
+      h1 span.light{font-weight:300}
+      h1 strong{font-weight:600}
+      h2{font-weight:600;font-size:21px;color:#292929;border-bottom:1px solid #ccc;margin-bottom:6px;padding-bottom:3px}
+      h3,h4,h5,h6{font-weight:400;font-size:17px;color:#292929;margin-bottom:10px;padding-bottom:10px}
+      pre{white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;white-space:pre-wrap;word-wrap:break-word}
+      b{font-size:15px}
+      p{padding:0;margin:4px 0 0 17px;display:list-item;list-style:disc}
+      .logo{color:#fff;text-decoration:none;font-size:25px;font-weight:700;border-radius:5px;background:#292929 url(https://user-images.githubusercontent.com/42666125/147363663-30767ef4-09af-48d6-8ea1-ee7a1c09e90f.png) no-repeat top left;margin-bottom:15px;margin-top:10px;padding:25px;clear:both}
+      .logo a{color:#fff!important;font-size:25px}
+      #wrap{min-width:200px;max-width:900px;margin:0 auto;padding:0 5px;}
+      .content{max-width:100%;margin:0 auto;margin-top:20px;margin-bottom:20px;padding:20px 30px 30px 30px;border-radius:5px;box-shadow:0 2px 5px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);background:#fff;line-height:1.7}
+      a:link{color:#f60;text-decoration:none;font-weight:700}
+      a:visited{color:#f60;text-decoration:none}
+      a:hover{color:#292929}
+      .mymenu{margin:0 auto;background-color:#fff;width:700px;border-radius:0 0 5px 5px;border:2px solid #fff;font-weight:700;font-size:15px;position:relative;padding-left:10px;padding-right:10px;box-shadow:0 2px 5px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19)}
+      .mymenu ul{list-style-type:none;margin:0;padding:0;overflow:hidden;background-color:#fff;margin-right:10px;background:url(./img/made-for-mikrotik.png) no-repeat right!important}
+      .mymenu li{float:left}
+      .mymenu li a{display:block;color:#292929;text-align:center;padding:8px 10px;text-decoration:none;margin-top:5px;margin-bottom:5px}
+      .mymenu li a:hover{background-color:#292929;color:#fff;border-radius:5px}
+      button{color:#fff;background-color:#f60;border-color:#f60;border:none;padding:8px;width:135px;font-size:15px;font-weight:700;cursor:pointer;border-radius:5px}
+      button:hover{background-color:#ccc;color:#292929}
+      .forms-out{margin:0 auto;padding:0;font-size:14px}
+      .forms-in{width:100%;margin:0 auto;color:#fff;padding:0;font-size:14px}
+      .forms-in div{padding:0;max-width:350px;margin:0 auto;border-radius:5px;margin-bottom:15px}
+      .forms-in h3{text-align:center}
+      .forms-in input{border:none;width:100%;margin-bottom:15px;padding:10px;box-sizing:border-box;border-radius:3px}
+      .forms-in button{border:none;padding:7px 20px;border-radius:4px;cursor:pointer;font-weight:700;margin-top:10px;margin-bottom:15px}
+      .forms-in button:hover{opacity:.7}
+      .hide{display:none}
+      #forgot-password{cursor:pointer}
+      #forgot-password:hover{opacity:.7}
+      #show-register{cursor:pointer}
+      #show-register:hover{opacity:.7}
+      #show-login{cursor:pointer}
+      #show-login:hover{opacity:.7}
+      .modal{display:block;position:fixed;z-index:1;padding-top:170px;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:#000;background-color:rgba(0,0,0,0.6)}
+      .modal-login{display:none;position:fixed;z-index:1;padding-top:170px;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:#000;background-color:rgba(0,0,0,0.6)}
+      .modal-content{line-height:1.4;border-radius:5px;background:#292929 url(https://user-images.githubusercontent.com/42666125/147363663-30767ef4-09af-48d6-8ea1-ee7a1c09e90f.png) no-repeat top left;color:#ddd;margin:auto;padding:20px;border:1px solid #444;box-shadow:0 2px 5px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);font-weight:700;font-size:14px}
+      .modal-content p{padding:0;margin:5px 5px 0 17px;display:list-item;line-height:2;list-style:disc}
+      .modal-content h2{color:#f60;float:left;padding:0;margin:0}
+      .close{color:#aaa;float:right;font-size:20px;font-weight:700;margin-top:-25px;margin-right:-15px}
+      .close:hover,.close:focus{color:orange;text-decoration:none;cursor:pointer}
+      .myButtonGoogle{display:flex;justify-content:space-between;align-items:center;width:auto;cursor:pointer;font-weight:400;float:right}
+      .myButtonGoogle :hover{opacity:.7}
+      .myButtonGoogle img{width:32px;padding:0;margin:0}
+      .myButtonGoogle .text{padding:0;margin:0}
+      .gsib_a{height:30px;padding-left:10px!important}
+      .gsc-input input{font-size:14px;color:#333;background:#fff!important}
+      .gsc-input-box{border-radius:5px;height:34px;background:#fff!important;margin-right:-6px!important;line-height:normal!important}
+      .gsc-search-button-v2{border-radius:5px!important;height:34px!important}
+      .gsc-control-cse{background:#fff!important;border:none!important;clear:both}
+      .google-search, .gcse-searchbox {float:right;width:250px;}
+      div#container_notlike,div#container_like{display:none}
+      #dialogoverlay{display:none;opacity:.5;position:fixed;top:0;left:0;background:#292929;width:100%;z-index:10}
+      #dialogbox{display:none;position:fixed;background:#292929;border-radius:5px;width:400px;z-index:10;box-shadow:0 2px 5px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19)}
+      #dialogbox>div{border-radius:5px;margin:3px;background:#292929 url(https://user-images.githubusercontent.com/42666125/147363663-30767ef4-09af-48d6-8ea1-ee7a1c09e90f.png) no-repeat}
+      #dialogbox>div>#dialogboxhead{background:#292929;opacity:.5;font-weight:700;font-size:15px;padding:10px;color:#fff}
+      #dialogbox>div>#dialogboxbody{font-weight:400;font-size:15px;padding:20px;color:#ccc}
+      #dialogbox>div>#dialogboxfoot{padding:10px;text-align:right}
+      .show-login-menu{width:100%;margin-bottom:10px}
+      .mikrotik-logo{display:none}
+      .column{float:left;width:50%}
+      .column a{font-weight:600}
+      .row:after{content:"";display:table;clear:both}
+      .member-only{margin-left:5px;height:13px;width:12px}
+      .footer{margin-top:15px;text-align:center;font-size:13px}
+      .show-homepage-menu{margin-bottom:3px}
+      .avatar img{margin-bottom:-13px;margin-left:5px;margin-right:5px;width:40px;height:40px;background-size:cover;background-repeat:no-repeat;background-position:center center;-webkit-border-radius:99em;-moz-border-radius:99em;border-radius:99em;border:2px solid #292929}
+      .terminal{margin-bottom:15px;width:100%;display:none}
+      .terminal img{max-width:100%;height:auto;display:block;margin-left:auto;margin-right:auto}
+      .tooltip{position:relative;display:inline-block;font-size:13px}
+      .tooltip .tooltiptext{visibility:hidden;width:150px;background-color:#555;color:#fff;text-align:center;border-radius:6px;padding:10px;position:absolute;z-index:1;bottom:125%;left:50%;margin-left:-60px;opacity:.9;transition:opacity .3s}
+      .tooltip .tooltiptext::after{content:"";position:absolute;top:100%;left:50%;margin-left:-18px;border-width:5px;border-style:solid;border-color:#555 transparent transparent}
+      .tooltip:hover .tooltiptext{visibility:visible;opacity:.9}
+      .disclaimer{margin-top:0px;margin-bottom:25px;color:#fff !important;padding:10px;border-radius:5px;font-size:14px; background:#292929 url(https://user-images.githubusercontent.com/42666125/147363663-30767ef4-09af-48d6-8ea1-ee7a1c09e90f.png) no-repeat}
+      @media screen and (max-width:1024px) {
+      h1{font-size:45px}
+      h2{font-size:20px}
+      .logo-left a{font-size:21px}
       }
-      #page{
-      background: #f0f0f0;
-      width:600px;
-      margin:0 auto 0;
-      border-radius:5px;
+      @media screen and (max-width:768px) {
+      .logo-left a{margin-top:5px!important;font-size:20px}
+      .logo-left img{width:40px;}
+      h1{font-size:40px}
+      h2{font-size:19px}
+      .content{width:100%!important;padding:15px}
+      .mymenu{width:100%!important}
+      .logo{width:100%}
+      .logo-left{justify-content:center;display:flex;width:100%}
+      .logo-right{text-align:center;width:100%}
+      .footer{margin-bottom:15px}
       }
-      h1{
-      overflow:hidden;
-      text-align:center;
-      font-size: 2.0rem;
-      font-weight: 400;
+      @media screen and (max-width:700px) {
+      h1{font-size:35px}
       }
+      @media screen and (max-width:600px) {
+      .disclaimer{padding:5px;font-size:13px}
+      .column{float:left;width:100%}
+      .text-join-now{display:none}
+      .show-login-menu{display:flex;justify-content:center;width:100%;margin-bottom:10px}
+      .show-homepage-menu{display:flex;justify-content:center;width:100%}
+      h1{font-size:30px}
+      h2{font-size:18px}
+      .mikrotik-logo{display:flex;justify-content:center;margin-top:15px}
+      .mymenu{padding-left:0;padding-right:0}
+      .mymenu ul{background:none!important;justify-content:center;display:flex}
+      }
+      @media screen and (max-width:500px) {
+      .google-search, .gcse-searchbox{margin-top:6px;width:100% !important}	  
+      .google-search, .gcse-searchbox{width:100% !important}	  
+      h1{font-size:25px}
+      h2{font-size:17px}
+      .hide-homepage{display:none}
+      }
+      @media print {
+      body,.body-fauxcolumn-outer{background:none!important;font-size:10pt}
+      }
+      
       #searchForm{
       /* The search form. */
       padding:50px 50px 30px;
